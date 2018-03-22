@@ -2,27 +2,39 @@
 <html>
 <head>
 	<title>Form Login</title>
+  <style type="text/css">
+.body{margin:0 auto;}
+.wrapper{padding:15px;margin:auto; right:0px; left:0px;position:absolute;height:500px; width:200px;border:solid 0px #eee;background:#eee;}
+</style>
 </head>
 <body>
-	<h1>Form login</h1>
-	<p>Silahkan anda login di form berikut ini untuk menggunakan sistem akademik di Universitas Amikom Yogyakarta</p>
+<div class="wrapper">
+  <h1>Form login</h1>
+  <p>Silahkan anda login di form berikut ini untuk menggunakan sistem akademik di Universitas Amikom Yogyakarta</p>
+<form action="action_page.php">
 
-	<form action>
-  First name:<br>
-  <input type="text" name="" value="">
-  <br>
-  Last name:<br>
-  <input type="text" name="" value="">
-  <br><br>
-   <input type="checkbox" name="" value="">Remember Me
-  <br><br>
-  <input type="submit" >
-</form> 
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+<br>
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+<br>
+    <button type="submit">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
 
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form>
+</div>
+  <form>
+  
 
-	<form>
-	
-
-	</form>
+  </form>
 </body>
 </html>
